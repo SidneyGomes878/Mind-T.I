@@ -1,0 +1,133 @@
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2, p {
+  color: #000;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  background: #ffffff;
+  border: 2px solid #00c5ff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  display: inline-block;
+  width: 80%;
+  background-color: #00c5ff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #008cba;
+  transform: scale(1.05);
+}
+
+button.small {
+  font-size: 14px;
+  width: 60%;
+}
+
+.counter {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.explicacao {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  text-align: left;
+  margin: 9px;
+  padding: 0;
+  list-style-type: disc;
+}
+
+li {
+  margin: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.button-large {
+  width: 90%;
+  font-size: 18px;
+  padding: 15px 20px;
+}
+
+.button-small {
+  width: 70%;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: -5px;
+  transform: translateX(18px);
+}
+.header-title {
+  font-size: 20px;
+  color: #34c8f5;
+  font-family: 'Lilita One', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+  }
+}
